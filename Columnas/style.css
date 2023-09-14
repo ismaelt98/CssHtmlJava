@@ -1,0 +1,53 @@
+/* Definir un background color para el HTML */
+html {
+    background-color: #e2a78c;
+}
+
+/* Estilo para el título principal */
+h1 {
+    display: inline-block; 
+    color: rgb(248, 20, 20); 
+    cursor: pointer; 
+    transition: color 0.3s; 
+}
+
+/* Cambiar el color del título a verde al pasar el ratón por encima */
+h1:hover {
+    color: rgb(23, 235, 23);
+}
+
+/* Estilo para el enlace */
+a {
+    color: blue; 
+    text-decoration: none; 
+    transition: color 0.3s; 
+}
+
+/* Cambiar el color del enlace a rojo al pasar el ratón por encima */
+a:hover {
+    color: red;
+}
+
+/* Estilo para el párrafo */
+p {
+    column-count: 3;
+    column-gap: 40px;
+    transition: background-color 0.3s, color 0.3s;
+    position: relative;
+    padding: 0;
+}
+
+/* Cambiar el fondo y el color de texto al seleccionar el párrafo */
+p::selection {
+    background-color: rgb(255, 0, 128);
+}
+
+/* Separación entre columnas de 2px en rojo (en el centro de las columnas) */
+p {
+    column-rule: 2px solid red; 
+}
+
+
+
+
+
