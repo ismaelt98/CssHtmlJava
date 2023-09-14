@@ -1,0 +1,120 @@
+
+/* 1. Selecciona todos los elementos */
+*{
+    color: aqua;
+}
+/*2. Selecciona todos los elementos que sean de tipo P */
+
+* P{
+    color: brown;
+}
+
+/* 3. Selecciona el elemento con ID title-1 */
+
+#title-1 {
+    /* Tus estilos CSS aquí */
+    font-size: 24px; /* Ejemplo de estilo */
+    color: rgb(60, 255, 0);    /* Ejemplo de estilo */
+}
+
+/* 4. Selecciona todos los elementos que pertenezca a la clase .bg-yellow */
+
+.bg-yellow {
+    /* Tus estilos CSS aquí */
+    background-color: yellow; /* Ejemplo de estilo de fondo amarillo */
+    color: black;             /* Ejemplo de estilo de color de texto negro */
+    font-weight: bold;        /* Ejemplo de estilo de texto en negrita */
+}
+
+/* 5. Selecciona todos los elementos que tengan el atributo ID */
+
+[id] {
+    border: 1px solid red;
+    background-color: lightgray;
+}
+
+/* 6. Selecciona todos los elementos que tengan el atributo ID y como valor title-1 */
+
+[id="title-1"] {
+    background-color: lightblue;
+    color: rgb(158, 106, 106);
+}
+
+/* 7. Selecciona todos los elementos que tengan el atributo HREF con un valor https://www.yahoo.com */
+
+[href="https://www.yahoo.com"] {
+    color: green;
+    font-weight: bold;
+}
+
+/* 8. Selecciona todos los elementos que tengan el atributo class con un valor que empiece por title */
+
+[class^="title"] {
+    color: rgb(40, 40, 56);
+    font-weight: bold;
+}
+
+/* 9. Selecciona todos los elementos que tengan el atributo HREF y que acaben en .com */
+
+[href$=".com"] {
+    color: red;
+    font-style: italic;
+}
+
+/* 10. Selecciona todos los elementos que tengan el atributo class con un valor title, title-1, title-2... */
+
+[class~="title"] {
+    color: purple;
+    font-weight: bold;
+}
+
+/* 11. Selecciona todos los elementos que tengan un atributo href y cuyo valor contenga 127 */
+
+[href*="127"] {
+    color: orange;
+    font-weight: bold;
+}
+
+/* 12. Selecciona todos los elementos que tengan el atributo href y cuyo valor empieze por http */
+
+[href^="http"] {
+    color: rgb(55, 105, 48);
+    font-weight: bold;
+}
+
+/* 13. Selecciona los elementos que sean A, P, o H1 desde una única regla CSS */
+
+a, p, h1 {
+    color: rgb(204, 75, 92);
+    font-weight: bold;
+}
+
+/* 14. Selecciona todos los elementos que pertezcan a main y que sean P */
+
+main p {
+    color: rgb(192, 204, 31);
+    font-weight: normal;
+}
+
+/* 15. Selecciona el siguiente elemento que sea hermano de H1 */
+
+h1 + * {
+    color: rgb(212, 125, 125);
+    font-weight: bold;
+}
+/* 16. Selecciona todos los elementos que sean hermanos de H1 */
+
+h1 ~ * {
+    color: rgb(218, 130, 218);
+    font-weight: normal;
+}
+
+/* 17. Selecciona todos los elementos hijos directos de main */
+
+main > * {
+    color: rgb(37, 102, 21);
+    font-weight: bold;
+}
+
+
+
